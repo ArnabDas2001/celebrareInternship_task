@@ -12,7 +12,7 @@ function saveState() {
 }
 
 
-// for undo
+// to undo
 function undo() {
   if (currentStateIndex > 0) {
     currentStateIndex--;
@@ -21,7 +21,7 @@ function undo() {
 }
 
 
-// for redo
+// to redo
 function redo() {
   if (currentStateIndex < stateStack.length - 1) {
     currentStateIndex++;
@@ -56,6 +56,7 @@ function updateContainerState() {
       saveState();
     }
 
+  // for drag around the text containers within the section
     function makeTextDraggable(element) {
       let offsetX, offsetY, isDragging = false;
 
@@ -85,6 +86,7 @@ function updateContainerState() {
     }
 
 
+  // font style selecting
     document.getElementById("fontSelector").addEventListener("change", (e) => {
       document.querySelectorAll(".text-box[selected]").forEach((element) => {
         element.style.fontFamily = e.target.value;
@@ -92,6 +94,7 @@ function updateContainerState() {
       saveState();
     });
 
+  // font size selecting
     document.getElementById("fontSizeSelector").addEventListener("input", (e) => {
       document.querySelectorAll(".text-box[selected]").forEach((element) => {
         element.style.fontSize = `${e.target.value}px`;
@@ -99,6 +102,8 @@ function updateContainerState() {
       saveState();
     });
 
+
+  // font color selecting
     document.getElementById("fontColorSelector").addEventListener("input", (e) => {
       const selectedText = document.querySelector(".text-box[selected]");
       if (selectedText) {
@@ -106,6 +111,7 @@ function updateContainerState() {
       }
     });
 
+  // for typing and adding new text 
     document.getElementById("container").addEventListener("click", (e) => {
       document.querySelectorAll(".text-box").forEach((element) => {
         element.removeAttribute("selected");
