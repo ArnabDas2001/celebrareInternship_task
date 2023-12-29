@@ -13,3 +13,7 @@
 <br>
 <br>
 //Users can drag around and reposition any text if they want.
+<br>
+<br>
+
+![Screenshot 2023-12-29 160726](https://github.com/ArnabDas2001/simple_textEditor/assets/102038057/650838f0-807a-4235-b906-654f950964c7)
