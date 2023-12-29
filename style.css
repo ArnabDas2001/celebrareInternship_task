@@ -94,7 +94,7 @@ body {
 }
 .option button{
   margin-top: 6.5%;
-  border-radius: 50px;
+  border-radius: 10px;
   border: 3px solid #006eff;
   background-color: transparent;
   color: #006eff;
@@ -106,6 +106,7 @@ body {
 }
 .option button:hover{
   border: none;
+  border-radius: 50px;
   background-color: #006eff;
   color: bisque;
   transform: scale(1.1);
@@ -114,4 +115,40 @@ body {
 .text-box {
   position: absolute;
   cursor: move;
+}
+
+.reunDo{
+   margin-left: 8%;
+}
+.undo,
+.redo {
+    width: 100px;
+    height: 43px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    color: #006eff;
+    border: 3px solid #006eff;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+.undo:hover,
+.redo:hover {
+    border: none;
+    width: 95px;
+    height: 39px;
+    background-color: #006eff;
+    color: bisque;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.undo:active,
+.redo:active {
+    box-shadow: none;
 }
