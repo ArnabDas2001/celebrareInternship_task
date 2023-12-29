@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation Card Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container"></div>
+  <div id="options">
+    
+    <!-- fonts -->
+    <div class="option">
+    <label for="fontSelector">Font:</label>
+    <select id="fontSelector">
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New, monospace">Courier New</option>
+      <option value="Helvetica, sans-serif">Helvetica</option>
+      <option value="Georgia, serif">Georgia</option>
+      <option value="Brush Script MT, cursive">Brush Script MT</option>
+      <option value="Impact, fantasy">Impact</option>
+      <option value="Verdana, sans-serif">Verdana</option>
+      <option value="Roboto, sans-serif">Roboto</option>
+    </div>
+ 
+    <!-- fontSize -->
+    <div class="option">
+    <label for="fontSizeSelector">Font Size:</label>
+    <input type="number" id="fontSizeSelector" value="16"    min="1"/>
+    </div>
+
+     <!-- fontColor -->
+    <div class="option" class="chooseColor">
+    <label for="fontColorSelector">Font Color:</label>
+    <input type="color" id="fontColorSelector" value="#b3b3b3" />
+    </div>
+
+    <!-- AddNewText -->
+    <div class="option">
+    <label for="addText">Add Text:</label>
+    <input type="text" id="addText" />
+    <button onclick="addText()">Add</button>
+    </div>
+
+    <!-- redo and undo -->
+    <button onclick="undo()">Undo</button>
+    <button onclick="redo()">Redo</button>
+  </div>
+  
+</body>
+
+ <script src="script.js"></script>
+</html>
+

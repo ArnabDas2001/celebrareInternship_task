@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  margin: 10px;
+  border: 3px solid #8a8a8a;
+  border-style: dashed;
+}
+
+#options {
+  width: 380px;
+  padding: 35px 20px;
+  background-color: #19fff4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.option {
+  margin-bottom: 20px;
+  padding: 2%;
+  margin-left: 20px;
+}
+.option input{
+ width: 94%;
+ height: 30px;
+ padding: 5px;
+ padding-left: 15px;
+ margin-top: 2%;
+ font-size: 16px;
+ font-weight: 500;
+ color: #006eff;
+ background: rgba(255, 255, 255, 0.363);
+ border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.219);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ border: 2px solid rgba(255, 255, 255, 0.589);
+}
+.option #fontSizeSelector{
+  margin-top: 5%;
+}
+
+#fontColorSelector{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 51px;
+  height: 46px;
+  position: absolute;
+  margin-top: -0.99%;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+#fontColorSelector::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+#fontColorSelector::-moz-color-swatch {
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+.option #addText{
+  height: 60px;
+}
+.option #fontSelector{
+ width: 100%;
+ height: 40px;
+ padding: 10px;
+ margin-top: 2%;
+ color: #006eff;
+ font-weight: 500;
+ background: rgba(255, 255, 255, 0.363);
+ border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.158);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ border: 2px solid rgba(255, 255, 255, 0.589);
+}
+.option label{
+  font-size: 20px;
+  font-weight: 600;
+  color: #006eff;
+}
+.option button{
+  margin-top: 6.5%;
+  border-radius: 50px;
+  border: 3px solid #006eff;
+  background-color: transparent;
+  color: #006eff;
+  width: 75px;
+  padding: 1.8%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.option button:hover{
+  border: none;
+  background-color: #006eff;
+  color: bisque;
+  transform: scale(1.1);
+}
+
+.text-box {
+  position: absolute;
+  cursor: move;
+}
