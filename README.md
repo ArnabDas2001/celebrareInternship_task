@@ -3,7 +3,7 @@
 
 <br>
 <br>
-//This is a simple text editor tool I made using HTML5, CSS and javascript, for a internship task.
+//This is a simple text editor tool I made using HTML5, CSS and javascript, for an internship task.
 <br>
 <br>
 //Tere are some features like 'font style', 'font size', 'font color' etc. to adjust and customize the text appearance befor or after adding it, features like 'undo' and 'redo' will let users reverse and forward the cureent state of the text.
